@@ -1,0 +1,26 @@
+{
+  "name": "slack-weather-bot",
+  "version": "0.0.1",
+  "description": "Show weather info for selected places using Slack bot",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "nf start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "slack",
+    "weather",
+    "slack-bot",
+    "bot"
+  ],
+  "author": "Viet Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "@google/maps": "^0.3.1",
+    "async": "^2.3.0",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "forecast": "^0.3.2",
+    "request": "^2.81.0"
+  }
+}
