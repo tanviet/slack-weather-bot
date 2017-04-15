@@ -2,6 +2,8 @@
 
 A Slack bot is used to show weather forecast for selected places.
 
+![Slack Weather Bot](https://github.com/tanviet/slack-weather-bot/blob/master/public/images/new-york-weather.png)
+
 ### 1. Install dependencies
 
 ```bash
@@ -12,9 +14,9 @@ $ npm install
 
 Sign in to your Slack account and choose your command at `<my-team>.slack.com/services/new/slash-commands`. In my case, I entered `/weather` and hit the **Add Slash Command Integration** button to go to the next page. Go ahead and fill out some of the important fields.
 
-- Command: <your-slack-command> (it will be `/weather` in this case).
-- URL: <your-bot-server> (I used ngrok to develop on local environment).
-- Method: <select-method-that-Slack-sends-data-to-your-server>.
+- Command: `<your-slack-command>` (it will be `/weather` in this case).
+- URL: `<your-bot-server>` (I used ngrok to develop on local environment).
+- Method: `<select-method-that-Slack-sends-data-to-your-server>`.
 
 For local development purpose, you should install [ngrok](https://ngrok.com). Once installed, run on terminal:
 

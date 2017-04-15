@@ -35,7 +35,6 @@ const server = app.listen(process.env.PORT || 3000, () => {
   console.log('Server is listening on port %d in %s mode', server.address().port, app.settings.env);
 });
 
-
 /* *******************************
 /* Weather Forecast Slash Command
 /* ***************************** */
@@ -76,6 +75,7 @@ function handleDataFromSlack(data, res) {
 
     async.waterfall([
       function(callback) {
+
         // Get geocoding info (lat, lng) for selected place
         googleMapsClient.geocode({
           address: address
